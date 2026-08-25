@@ -37,6 +37,7 @@ npm run dev
 
 1. Push this repository to GitHub.
 2. Import the GitHub repository in Vercel as a Next.js project.
+3. Set Vercel Root Directory to the repository root. Leave it blank or use `./`.
 3. Supabase deployment environment variables are included in `vercel.json`:
 
 ```bash
@@ -46,5 +47,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_nrHcfkBpG7PG7UNDHyt0yg_--fGABoS
 
 4. In Supabase Auth settings, add the Vercel production URL to allowed redirect URLs.
 5. Deploy.
+
+If Vercel says it cannot detect the Next.js version, the Root Directory is pointing at the wrong folder. The `package.json` file must be visible at the selected root.
 
 Do not add the direct database connection string to Vercel. It is only for database administration and migrations.
