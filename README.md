@@ -22,8 +22,8 @@ Mobile-first class booking management built with Next.js, Supabase Auth/DB, and 
 3. Copy `.env.example` to `.env.local` and fill in:
 
 ```bash
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_PUBLIC_SUPABASE_URL=https://cfpsvjetsfokdorxkjwn.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_nrHcfkBpG7PG7UNDHyt0yg_--fGABoS
 ```
 
 4. Install and run:
@@ -37,8 +37,14 @@ npm run dev
 
 1. Push this repository to GitHub.
 2. Import the GitHub repository in Vercel as a Next.js project.
-3. Add the same Supabase environment variables in Vercel Project Settings.
+3. Supabase deployment environment variables are included in `vercel.json`:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=https://cfpsvjetsfokdorxkjwn.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_nrHcfkBpG7PG7UNDHyt0yg_--fGABoS
+```
+
 4. In Supabase Auth settings, add the Vercel production URL to allowed redirect URLs.
 5. Deploy.
 
-The app can build without Supabase variables for preview, but login, booking, admin approval, and vouchers require Supabase to be configured.
+Do not add the direct database connection string to Vercel. It is only for database administration and migrations.

@@ -1,0 +1,7 @@
+{
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://cfpsvjetsfokdorxkjwn.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_nrHcfkBpG7PG7UNDHyt0yg_--fGABoS"
+  }
+}
